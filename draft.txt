@@ -1,0 +1,21 @@
+{%
+for i in range(10)
+	{{ i }}
+end
+%}
+
+{%
+for j in range(10)
+    if j % 2 == 0
+        `i=`{{ i }}`is even`
+    else
+        `i=`{{ i }}`is ood`
+    end
+end
+%}
+
+{%
+var = 10
+%}
+
+var = {{ var }}
